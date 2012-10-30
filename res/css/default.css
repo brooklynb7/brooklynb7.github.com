@@ -1,7 +1,7 @@
 body
 {
 	font: 1.5em Helvetica, arial, freesans, clean, sans-serif;
-	color: #333;
+	color: #777;
 	margin:0;
 	padding:0;
 	background-color:#dbefff
@@ -10,6 +10,5 @@ body
 .header{
 	width:1000px;
 	font-size: 2em;
-	height: 2em;
 	margin: 10px auto;
 }
