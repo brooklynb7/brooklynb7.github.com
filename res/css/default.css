@@ -55,16 +55,17 @@ a{
 		height: 400px;
 	}	
 	.content{
-		width:95%;
+		width:90%;
 	}
 }
 
 @media screen and (max-width: 480px) {
 	.header{
 		font-size: 1em;
+		width:480px;
 	}
 	.content{
-		width:86%;
+		width:90%;
 	}
 	.pic img{
 		width:360px;
