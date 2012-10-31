@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>To Kila</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<link rel="Stylesheet" type="text/css" href="res/css/default.css"/>
 	<link rel="stylesheet" href="res/script/fancybox/source/jquery.fancybox.css?v=2.1.3" type="text/css" media="screen" />
 </head>
@@ -18,7 +19,7 @@
 <script type="text/javascript" src="res/script/default.js" ></script>
 <script type="text/javascript">
 	$picLocation = $(".pic");
-	var imgData = [
+	/*var imgData = [
 		{"small":"IMG_0029.JPG","large":"IMG_0029.JPG"},
 		{"small":"IMG_0030.JPG","large":"IMG_0030.JPG"},
 		{"small":"IMG_0031.JPG","large":"IMG_0031.JPG"},
@@ -26,11 +27,16 @@
 		{"small":"IMG_0033.JPG","large":"IMG_0033.JPG"},
 		{"small":"P1010196.JPG","large":"P1010196.JPG"},
 		{"small":"P1010197.JPG","large":"P1010197.JPG"}
-	];
-	$.each(imgData,function(){
+	];*/
+	/*$.each(imgData,function(){
 		var img = new kila.image(this.small,this.large);
 		$picLocation.append(img.content());
-	});
+	});*/
+	for(var i = 1;i<= 17; i ++){
+		var large = i + "l.jpg", small = i + "s.jpg",
+		    img = new kila.image(small,large);
+		$picLocation.append(img.content());
+	}
 	$(document).ready(function() {
 		$(".fancy").fancybox();		
 	});

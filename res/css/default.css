@@ -44,5 +44,13 @@ a{
 	border: 1px solid #BBB;
 	margin: 7px 14px 7px 0;
 	width:120px;
-	height: 180px;
+	height: 160px;
+}
+
+/* for 700px or less */
+@media screen and (max-width: 700px) {
+	.pic img{
+		width:300px;
+		height: 400px;
+	}
 }
