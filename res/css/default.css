@@ -61,11 +61,11 @@ a{
 
 @media screen and (max-width: 480px) {
 	.header{
-		font-size: 1em;
+		font-size: 0.9em;
 		width:480px;
 	}
 	.content{
-		width:90%;
+		width:88%;
 	}
 	.pic img{
 		width:360px;
