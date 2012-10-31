@@ -49,13 +49,14 @@ a{
 @media screen and (max-width: 768px) {
 	.header{
 		font-size: 1.5em;
+		width:480px;
 	}
 	.pic img{
 		width:300px;
 		height: 400px;
 	}	
 	.content{
-		width:95%;
+		width:90%;
 	}
 }
 
@@ -64,7 +65,7 @@ a{
 		font-size: 1em;
 	}
 	.content{
-		width:86%;
+		width:90%;
 	}
 	.pic img{
 		width:360px;
