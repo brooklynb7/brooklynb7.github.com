@@ -15,7 +15,6 @@ a{
 	width:100%;
 	font-size: 2em;
 	text-align: center;
-	margin: 0px auto 20px;
 	padding-top: 10px;
 	background-color: #ffffff;
 }
@@ -59,6 +58,9 @@ a{
 		display: none;
 	}
 
+	.header{
+		font-size: 1em;
+	}
 	.pic img{
 		width:360px;
 		height: 480px;
