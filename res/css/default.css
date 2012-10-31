@@ -4,11 +4,45 @@ body
 	color: #777;
 	margin:0;
 	padding:0;
-	background-color:#dbefff
+	background-color:#dbefff;
+}
+
+a{
+	text-decoration: none;
 }
 
 .header{
-	width:1000px;
+	width:100%;
 	font-size: 2em;
-	margin: 10px auto;
+	text-align: center;
+	margin: 0px auto 20px;
+	padding-top: 10px;
+	background-color: #ffffff;
+}
+
+.content{
+	position: relative;
+	width: 70%;
+	margin: 0px auto;
+}
+
+.content>div{
+	float: left;
+}
+
+.memo{
+	width: 30%;
+}
+
+.pic{
+	width: 60%;
+}
+
+.pic img{
+	padding: 5px;
+	background: white;
+	border: 1px solid #BBB;
+	margin: 7px 14px 7px 0;
+	width:120px;
+	height: 180px;
 }

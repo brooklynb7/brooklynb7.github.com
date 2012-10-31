@@ -3,11 +3,36 @@
 <head>
 	<title>To Kila</title>
 	<link rel="Stylesheet" type="text/css" href="res/css/default.css"/>
+	<link rel="stylesheet" href="res/script/fancybox/source/jquery.fancybox.css?v=2.1.3" type="text/css" media="screen" />
 </head>
 <body>
 	<div class="header">Wherever you are, you are always in my heart</div>
-	<div></div>
+	<div class="content">
+		<div class="memo">&nbsp;</div>
+		<div class="pic">
+		</div>
+	</div>
 </body>
 <script type="text/javascript" src="res/script/jquery-1.7.1.min.js" ></script>
+<script type="text/javascript" src="res/script/fancybox/source/jquery.fancybox.pack.js?v=2.1.3"></script>
 <script type="text/javascript" src="res/script/default.js" ></script>
+<script type="text/javascript">
+	$picLocation = $(".pic");
+	var imgData = [
+		{"small":"IMG_0029.JPG","large":"IMG_0029.JPG"},
+		{"small":"IMG_0030.JPG","large":"IMG_0030.JPG"},
+		{"small":"IMG_0031.JPG","large":"IMG_0031.JPG"},
+		{"small":"IMG_0032.JPG","large":"IMG_0032.JPG"},
+		{"small":"IMG_0033.JPG","large":"IMG_0033.JPG"},
+		{"small":"P1010196.JPG","large":"P1010196.JPG"},
+		{"small":"P1010197.JPG","large":"P1010197.JPG"}
+	];
+	$.each(imgData,function(){
+		var img = new kila.image(this.small,this.large);
+		$picLocation.append(img.content());
+	});
+	$(document).ready(function() {
+		$(".fancy").fancybox();		
+	});
+</script>
 </html>
