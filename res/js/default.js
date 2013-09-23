@@ -2,7 +2,7 @@
 	var kila = {};
 
 	kila.image = function(small,large){
-		this.img_path = "res/images/";
+		this.img_path = "res/img/";
 		this.small = this.img_path + small;
 		this.large = this.img_path + large;
 	};
